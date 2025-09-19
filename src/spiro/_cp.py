@@ -43,8 +43,8 @@ class spiro_cp(Structure):
 
 CPType = namedtuple('CPType_tuple',
                     ('corner', 'g4', 'g2', 'left', 'right', 'end',
-                     'open_contour', 'end_open_contour')
-                    )(b'v', b'o', b'c', b'[', b']', b'z', b'{', b'}')
+                     'open_contour', 'end_open_contour', 'anchor', 'handle')
+                    )(b'v', b'o', b'c', b'[', b']', b'z', b'{', b'}', b'a', b'h')
 
 # Completely optional sequence type for control points.
 class ControlPoints(MutableSequence):
